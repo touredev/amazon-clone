@@ -11,7 +11,7 @@ import { useStateValue } from "./StateProvider";
 function App() {
   const [{}, dispatch] = useStateValue();
 
-  /*useEffect(() => {
+  useEffect(() => {
     // will only run once when the app component loads...
 
     auth.onAuthStateChanged(authUser => {
@@ -32,10 +32,9 @@ function App() {
         })
       }
     })
-  }, [])*/
+  }, [])
 
   return (
-    // BEM
     <Router>
       <div className="app">
         <Switch>

@@ -22,6 +22,10 @@
   height: 180px;
 }
 
+.checkoutProduct__image:hover {
+  transform: scale(1.2);
+}
+
 .checkoutProduct__rating>img {
   max-height: 20px;
 }
@@ -33,4 +37,8 @@
 .checkoutProduct__title {
   font-size: 17px;
   font-weight: 800;
+}
+
+.checkoutProduct>button {
+  cursor: pointer;
 }
