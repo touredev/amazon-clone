@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Product from "./Product";
+import Product from "../../components/Product";
 
 function Home() {
   return (
@@ -37,16 +37,23 @@ function Home() {
           />
           <Product
             id="5645646"
-            title="FITUEYES Meuble TV Pied avec 3 Etagères Support Pivotant pour Téléviseur de 32 à 60 Pouce Ecran LED LCD Plasma - Pivotant à 70 Degrés - Hauteur Réglable - Gestion des câble - VESA Max 600 x 400 mm"
+            title="FITUEYES Meuble TV Pied avec 3 Etagères Support Pivotant pour Téléviseur de 32 à 60 Pouce"
             price={63.66}
             image="https://www.amazon.fr/images/I/61PAS%2B0s1YL._AC_SX679_.jpg"
             rating={4}
           />
           <Product
             id="67908454"
-            title="MCorz Original Xiaomi TV Box S (EU Version) 4K Ultra HD avec Dolby Audio, contrôle à Distance Assistant Google, contrôle à Distance par Voix, Hdmi 4K HDR, Lecteur multimédia de Transmission"
+            title="MCorz Original Xiaomi TV Box S (EU Version) 4K Ultra HD avec Dolby Audio"
             price={52.90}
             image="https://www.amazon.fr/images/I/51gZPkkPAXL._AC_SX679_.jpg"
+            rating={5}
+          />
+          <Product
+            id="358722024"
+            title="TV LED 4K 108 cm LG 43UM7400 Téléviseur LCD 43 pouces TV Connectée"
+            price={469.47}
+            image="https://www.amazon.fr/images/I/719dEKVEVdL._AC_SX425_.jpg"
             rating={5}
           />
         </div>

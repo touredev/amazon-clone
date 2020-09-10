@@ -1,6 +1,6 @@
 import React from "react";
 import "./Product.css";
-import { useStateValue } from "./StateProvider";
+import { useStateValue } from "../../StateProvider";
 
 function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
@@ -30,7 +30,7 @@ function Product({ id, title, image, price, rating }) {
         <div className="product__rating">
           {Array(rating)
             .fill()
-            .map((_) => (
+            .map((_, i) => (
               <img
                 src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/241/star_2b50.png"
                 alt=""
@@ -40,6 +40,7 @@ function Product({ id, title, image, price, rating }) {
       </div>
 
       <img src={image} alt="" />
+
       <button onClick={addToBasket}>Add to Basket</button>
     </div>
   );
